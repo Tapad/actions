@@ -28,7 +28,7 @@ jobs:
           cache-to: type=gha,mode=max
   
       - name: Scan image
-        uses: Tapad/gha-container-scanner
+        uses: Tapad/gha-container-scanner@v1
         with: 
           container: ${{ env.IMAGE }}:latest
           wiz_key_id: ${{ secrets.WIZ_KEY_ID }}
